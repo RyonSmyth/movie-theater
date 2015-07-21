@@ -11,6 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20150721042009) do
+
+  create_table "movies", force: :cascade do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "image_url"
+    t.string   "first_showing"
+    t.string   "second_showing"
+    t.string   "third_showing"
+    t.string   "fourth_showing"
+    t.string   "fifth_showing"
+    t.string   "sixth_showing"
+    t.string   "seventh_showing"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
 
 end

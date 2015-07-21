@@ -1,0 +1,57 @@
+<%= form_for(@movie) do |f| %>
+  <% if @movie.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@movie.errors.count, "error") %> prohibited this movie from being saved:</h2>
+
+      <ul>
+      <% @movie.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :image_url %><br>
+    <%= f.text_field :image_url %>
+  </div>
+  <div class="field">
+    <%= f.label :first_showing %><br>
+    <%= f.text_field :first_showing %>
+  </div>
+  <div class="field">
+    <%= f.label :second_showing %><br>
+    <%= f.text_field :second_showing %>
+  </div>
+  <div class="field">
+    <%= f.label :third_showing %><br>
+    <%= f.text_field :third_showing %>
+  </div>
+  <div class="field">
+    <%= f.label :fourth_showing %><br>
+    <%= f.text_field :fourth_showing %>
+  </div>
+  <div class="field">
+    <%= f.label :fifth_showing %><br>
+    <%= f.text_field :fifth_showing %>
+  </div>
+  <div class="field">
+    <%= f.label :sixth_showing %><br>
+    <%= f.text_field :sixth_showing %>
+  </div>
+  <div class="field">
+    <%= f.label :seventh_showing %><br>
+    <%= f.text_field :seventh_showing %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

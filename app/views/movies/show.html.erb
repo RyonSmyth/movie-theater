@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @movie.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @movie.description %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @movie.image_url %>
+</p>
+
+<p> Showings for <%= Date::MONTHNAMES[Date.today.month] %> <%= Time.now.day %> </p>
+<p class="showings">
+  <%= @movie.first_showing %>
+
+  <%= @movie.second_showing %>
+
+  <%= @movie.third_showing %>
+
+  <%= @movie.fourth_showing %>
+
+  <%= @movie.fifth_showing %>
+
+  <%= @movie.sixth_showing %>
+
+  <%= @movie.seventh_showing %>
+</p>
+
+<%= link_to 'Edit', edit_movie_path(@movie) %> |
+<%= link_to 'Back', movies_path %>

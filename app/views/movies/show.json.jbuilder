@@ -1,0 +1,1 @@
+json.extract! @movie, :id, :name, :description, :image_url, :first_showing, :second_showing, :third_showing, :fourth_showing, :fifth_showing, :sixth_showing, :seventh_showing, :created_at, :updated_at
