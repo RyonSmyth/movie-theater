@@ -10,22 +10,23 @@
 	padding-bottom: 4em;
 }
 .movie-index {
-	width: 24%;
 	display: inline-block;
 }
+
 .index-container {
-	margin-left: 3em;
-	
+	margin-left: 1.8em;
 }
 .movie-index img {
-	width: 100%;
-	height: auto;
 	max-height: 250px;
 	max-width: 200px;
+	max-width: 100%;
+	height: auto;
 }
+
 #movie-name {
 	padding-top: .5em;
 	font-size: 1.5em;
-	width: 200px;
+	max-width: 8.2em;
+	width: auto;
 	text-align: center;
 }
