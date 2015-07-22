@@ -12,7 +12,7 @@
 
 <p>
   <strong>Image url:</strong>
-  <%= @movie.image_url %>
+  <img src="/images/<%= @movie.image_url %>" height="300" width="400">
 </p>
 
 <p> Showings for <%= Date::MONTHNAMES[Date.today.month] %> <%= Time.now.day %> </p>

@@ -1,3 +1,31 @@
 // Place all the styles related to the movies controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#movie-header {
+	margin-left: 1em;
+}
+#header-border {
+	border-top: 1px solid gray;
+	padding-bottom: 4em;
+}
+.movie-index {
+	width: 24%;
+	display: inline-block;
+}
+.index-container {
+	margin-left: 3em;
+	
+}
+.movie-index img {
+	width: 100%;
+	height: auto;
+	max-height: 250px;
+	max-width: 200px;
+}
+#movie-name {
+	padding-top: .5em;
+	font-size: 1.5em;
+	width: 200px;
+	text-align: center;
+}
