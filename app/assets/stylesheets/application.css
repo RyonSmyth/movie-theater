@@ -27,7 +27,6 @@
   	position: static;
     background-color: white;
     border: white;
-    padding-top: 1em;
     border-bottom: 1px solid black;
   }
   .navbar-toggle {
@@ -44,7 +43,6 @@
   	position: static;
     background-color: white;
     border: white;
-    padding-top: 1em;
   }
   .navbar-inverse .navbar-nav li a {
     color: black;
