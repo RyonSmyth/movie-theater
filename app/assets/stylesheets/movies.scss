@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+/* Movies Index Page CSS */
 #movie-header {
 	margin-left: 1em;
 }
@@ -29,4 +31,48 @@
 	max-width: 8.2em;
 	width: auto;
 	text-align: center;
+}
+
+/* Movies Show Page CSS */
+.movie-show {
+	margin-left: 3em;
+	margin-top: 6em;
+}
+.movie-show img {
+	display: inline-block;
+	max-height: 500px;
+	max-width: 400px;
+
+}
+#show-info {
+	display: inline-block;
+	max-width: 540px;
+	min-width: 250px;
+	width: auto;
+	vertical-align: top;
+	margin-left: 4em;
+	position: absolute;
+	margin-right: 4em;
+}
+#show-info h1 {
+
+}
+#show-description {
+	font-size: 1.3em;
+	max-width: 540px;
+	min-width: 250px;
+	width: auto;
+}
+.movie-show table {
+	min-width: 250px;
+	max-width: 450px;
+	width: auto;
+	border: 2px solid gray;
+}
+.movie-show td {
+	padding: .4em;
+	font-size: 1.3em;
+}
+#show-info h2 {
+	font-size: 2em;
 }
