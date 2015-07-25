@@ -1,0 +1,290 @@
+/* Movies Index Page CSS */
+/* line 8, /home/ryan/Desktop/movieapp/app/assets/stylesheets/movies.scss */
+#movie-header {
+  margin-left: 1em;
+}
+
+/* line 11, /home/ryan/Desktop/movieapp/app/assets/stylesheets/movies.scss */
+#header-border {
+  border-top: 1px solid gray;
+  padding-bottom: 4em;
+}
+
+/* line 15, /home/ryan/Desktop/movieapp/app/assets/stylesheets/movies.scss */
+.movie-index {
+  display: inline-block;
+}
+
+/* line 19, /home/ryan/Desktop/movieapp/app/assets/stylesheets/movies.scss */
+.index-container {
+  margin-left: 1.8em;
+}
+
+/* line 22, /home/ryan/Desktop/movieapp/app/assets/stylesheets/movies.scss */
+.movie-index img {
+  max-height: 250px;
+  max-width: 200px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 29, /home/ryan/Desktop/movieapp/app/assets/stylesheets/movies.scss */
+#movie-name {
+  padding-top: .5em;
+  font-size: 1.5em;
+  max-width: 8.2em;
+  width: auto;
+  text-align: center;
+}
+
+/* Movies Show Page CSS */
+/* line 38, /home/ryan/Desktop/movieapp/app/assets/stylesheets/movies.scss */
+.movie-show {
+  margin-left: 3em;
+  margin-top: 6em;
+}
+
+/* line 42, /home/ryan/Desktop/movieapp/app/assets/stylesheets/movies.scss */
+.movie-show img {
+  display: inline-block;
+  max-height: 500px;
+  max-width: 400px;
+}
+
+/* line 48, /home/ryan/Desktop/movieapp/app/assets/stylesheets/movies.scss */
+#show-info {
+  display: inline-block;
+  max-width: 540px;
+  min-width: 250px;
+  width: auto;
+  vertical-align: top;
+  margin-left: 4em;
+  position: absolute;
+  margin-right: 4em;
+}
+
+/* line 61, /home/ryan/Desktop/movieapp/app/assets/stylesheets/movies.scss */
+#show-description {
+  font-size: 1.3em;
+  max-width: 540px;
+  min-width: 250px;
+  width: auto;
+}
+
+/* line 67, /home/ryan/Desktop/movieapp/app/assets/stylesheets/movies.scss */
+.movie-show table {
+  min-width: 250px;
+  max-width: 450px;
+  width: auto;
+  border: 2px solid gray;
+}
+
+/* line 73, /home/ryan/Desktop/movieapp/app/assets/stylesheets/movies.scss */
+.movie-show td {
+  padding: .4em;
+  font-size: 1.3em;
+}
+
+/* line 77, /home/ryan/Desktop/movieapp/app/assets/stylesheets/movies.scss */
+#show-info h2 {
+  font-size: 2em;
+}
+/* line 1, /home/ryan/Desktop/movieapp/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /home/ryan/Desktop/movieapp/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /home/ryan/Desktop/movieapp/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /home/ryan/Desktop/movieapp/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 24, /home/ryan/Desktop/movieapp/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 28, /home/ryan/Desktop/movieapp/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /home/ryan/Desktop/movieapp/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 40, /home/ryan/Desktop/movieapp/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 44, /home/ryan/Desktop/movieapp/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 50, /home/ryan/Desktop/movieapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 58, /home/ryan/Desktop/movieapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 69, /home/ryan/Desktop/movieapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+@media (min-width: 1px) {
+  #logged-in {
+    display: none;
+  }
+  #login-button {
+    display: none;
+  }
+  #login-area{
+    display: none;
+  }
+  .navbar-inverse .navbar-nav li a {
+    color: black;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+  .navbar-collapse, .collapse {
+    text-align: center;
+  }
+  .navbar {
+    position: static;
+    background-color: white;
+    border: gray;
+    border-bottom: 1px solid black;
+  }
+  .navbar-toggle {
+    background-color: rgba(128, 128, 128, 0.8);
+  }
+  .navbar-inverse .navbar-nav li a:hover {
+    color: gray;   
+  }
+}
+
+@media (min-width: 456px) {
+    #login-small {
+    display: none;
+  }
+  #login-area {
+    display: none;
+  
+  }
+  .page-top #search {
+    padding-right: 3em;
+  }
+
+}
+
+/* CSS Navagation Bar for Medium/Large Devices */
+@media (min-width: 768px) {
+  #logged-in {
+    margin-top: 1.8em;
+    display: inline-block;
+    margin-left: .5em;
+  }
+
+  #login-button {
+    display: inline-block;
+    margin-top: 1.8em;
+
+  }
+  #account {
+    display: none;
+  }
+  .navbar {
+  	position: static;
+    background-color: white;
+    border: gray;
+  }
+  .navbar-inverse .navbar-nav li a {
+    color: black;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+  .navbar-inverse .navbar-nav li a:hover {
+    color: gray;   
+  }
+  .container-fluid {
+    padding: 0;   
+  }
+  .nav, .navbar-nav {
+    width: 100%;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    display: table;
+    table-layout: fixed;      
+  }
+  .navbar li {
+    display: table-cell;
+    width: 20%;
+    border-right: 1px solid gray;
+    text-align: center;
+  }
+}
+
+/* CSS search/login bar for small devices */
+@media (min-width: 992px) {
+  #login-button {
+    display: none;
+  }
+    #login-area {
+    display: inline-block;
+  }
+
+}

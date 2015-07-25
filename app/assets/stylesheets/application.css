@@ -13,20 +13,29 @@
  *= require_tree .
  *= require_self
  */
-/* CSS Navagation Bar for Small Devices */
-@media (max-width: 767px) {
+
+@media (min-width: 1px) {
+  #logged-in {
+    display: none;
+  }
+  #login-button {
+    display: none;
+  }
+  #login-area{
+    display: none;
+  }
   .navbar-inverse .navbar-nav li a {
     color: black;
     font-weight: bold;
     font-size: 1.3em;
   }
   .navbar-collapse, .collapse {
-  	text-align: center;
+    text-align: center;
   }
   .navbar {
-  	position: static;
+    position: static;
     background-color: white;
-    border: white;
+    border: gray;
     border-bottom: 1px solid black;
   }
   .navbar-toggle {
@@ -35,14 +44,42 @@
   .navbar-inverse .navbar-nav li a:hover {
     color: gray;   
   }
+}
+
+@media (min-width: 456px) {
+    #login-small {
+    display: none;
+  }
+  #login-area {
+    display: none;
+  
+  }
+  .page-top #search {
+    padding-right: 3em;
+  }
 
 }
+
 /* CSS Navagation Bar for Medium/Large Devices */
 @media (min-width: 768px) {
+  #logged-in {
+    margin-top: 1.8em;
+    display: inline-block;
+    margin-left: .5em;
+  }
+
+  #login-button {
+    display: inline-block;
+    margin-top: 1.8em;
+
+  }
+  #account {
+    display: none;
+  }
   .navbar {
   	position: static;
     background-color: white;
-    border: white;
+    border: gray;
   }
   .navbar-inverse .navbar-nav li a {
     color: black;
@@ -62,10 +99,21 @@
     display: table;
     table-layout: fixed;      
   }
-  li {
+  .navbar li {
     display: table-cell;
     width: 20%;
     border-right: 1px solid gray;
     text-align: center;
   }
+}
+
+/* CSS search/login bar for small devices */
+@media (min-width: 992px) {
+  #login-button {
+    display: none;
+  }
+    #login-area {
+    display: inline-block;
+  }
+
 }
