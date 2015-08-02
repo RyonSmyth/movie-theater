@@ -49,3 +49,4 @@ end
 
   gem 'figaro'
   gem 'devise'
+  gem 'cancancan'
