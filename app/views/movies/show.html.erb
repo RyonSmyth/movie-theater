@@ -16,6 +16,7 @@
         <td><%= @movie.sixth_showing %></td>
         <td><%= @movie.seventh_showing %></td>
       </table>
+    <h4 id="show-rating">Average Rating: <div class="rated" data-score"<%= @movie.average_rating %>"></div></h4>
   </div>
   <%= render 'new_comment' %>
   <%= render 'comments' %>
