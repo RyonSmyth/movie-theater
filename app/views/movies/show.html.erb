@@ -17,6 +17,8 @@
         <td><%= @movie.seventh_showing %></td>
       </table>
   </div>
+  <%= render 'new_comment' %>
+  <%= render 'comments' %>
 </div>
 
 <%= link_to 'Edit', edit_movie_path(@movie) %> |
