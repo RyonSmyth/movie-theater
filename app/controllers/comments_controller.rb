@@ -21,6 +21,10 @@ class CommentsController < ApplicationController
   end
 
   def destroy
+    @comment = Comment.find(params[:id])
+    movie = @comment.movie
+    @comment.destroy
+    redirect_to movie
   end
 
   private
