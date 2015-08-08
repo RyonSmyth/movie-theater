@@ -1,4 +1,5 @@
 class Movie < ActiveRecord::Base
+  validates :name, presence: true
   has_many :comments
 
   def average_rating

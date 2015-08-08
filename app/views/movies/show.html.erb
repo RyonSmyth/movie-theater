@@ -5,7 +5,7 @@
   <img src="/images/<%= @movie.image_url %>" class="img-responsive">
   <div id="show-info">
     <h1><%= @movie.name %></h1><br>
-    <p id="show-description"><strong>Synopsis: </strong><%= @movie.description %></p><br>
+    <p id="show-description"><strong>Synopsis: </strong><%= @movie.description %></p>
     <h2>Showings for <%= Date::MONTHNAMES[Date.today.month] %> <%= Time.now.day %>, <%= Time.now.year%></h2>
       <table> 
         <td><%= @movie.first_showing %></td>
@@ -16,10 +16,13 @@
         <td><%= @movie.sixth_showing %></td>
         <td><%= @movie.seventh_showing %></td>
       </table>
-    <h4 id="show-rating">Average Rating: <div class="rated" data-score"<%= @movie.average_rating %>"></div></h4>
+    <h4 id="show-rating">Average Rating: <div class="rated" data-score"<%= @movie.average_rating %>"></div></h4><br>
   </div>
-  <%= render 'new_comment' %>
+  <p id ="show-comments">
+    <%= render 'new_comment' %>
+  </p>
   <%= render 'comments' %>
+  <%= will_paginate @comments %>
 </div>
 
 <%= link_to 'Edit', edit_movie_path(@movie) %> |

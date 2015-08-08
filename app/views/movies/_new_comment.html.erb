@@ -1,17 +1,12 @@
 <h4>Add a review: </h4>
 <%= form_for([@movie, @movie.comments.build]) do |f| %>
 	<p>
-		<%= f.label :body, "Comments" %><br>
 		<%= f.text_area :body %>
 	</p>
 	<p>
 		<div class="rating"></div>
 	</p>
 	<p>
-		<% if signed_in? %>
-			<%= f.submit "Submit" %>
-		<% else %>
-			<button><%= link_to 'Submit', user_session_path, :method => :get, :style => "color:black" %></button>
-		<% end %>
+		<%= f.submit "Submit" %>
 	</p>
 <% end %>
