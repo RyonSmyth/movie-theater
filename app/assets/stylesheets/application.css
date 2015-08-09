@@ -17,6 +17,10 @@
 
 
 @media (min-width: 1px) {
+  .content {
+    margin-right: 1em;
+  
+  }
   #logged-in {
     display: none;
   }
@@ -64,6 +68,9 @@
 
 /* CSS Navagation Bar for Medium/Large Devices */
 @media (min-width: 768px) {
+  .content {
+    margin-right: 0;
+  }
   #logged-in {
     margin-top: 1.8em;
     display: inline-block;
