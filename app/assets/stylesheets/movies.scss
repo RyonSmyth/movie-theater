@@ -2,10 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.movie-button {
-  float: left;
-  padding-right: 10px;
-}
+
 /* Movies Index Page CSS */
 
 #movie-header {
@@ -27,7 +24,7 @@
 
 #movie-name {
 	padding-top: .5em;
-	font-size: 1.5em;
+	font-size: .3em;
 	max-width: 8.2em;
 	width: auto;
 	text-align: center;
@@ -75,7 +72,10 @@ hr {
 #show-comments {
 	margin-top: 5em;
 }
-
+.movie-button {
+  float: left;
+  padding-right: 10px;
+}
 
 
 @media (min-width: 1px) {
