@@ -11,14 +11,14 @@
   <h3>Last name:</h3>
   <font size="4"><%= @user.last_name %></font>
 </p>
+<%= button_to 'Change Name', edit_user_path(@user), :method => :get %>
 <p>
   <h3>Email:</h3>
   <font size="4"><%= @user.email %></font>
 </p>
-<div class="account-button">
-<%= button_to 'Edit', edit_user_path(@user), :method => :get %>
-</div>
-<div class="account-button">
-<%= button_to 'Delete Account', @user, method: :delete, data: { confirm: 'Are you sure?' } %>
-</div>
+
+<%= button_to 'Edit Account', edit_user_registration_path(@user), :method => :get %>
+
+
+
 
