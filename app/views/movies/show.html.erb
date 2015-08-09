@@ -35,8 +35,10 @@
 </div>
 
 <% if user_signed_in? && current_user.admin %>
-<p class="show-button">
+<div class="button">
 <%= button_to 'Edit', edit_movie_path(@movie), :method => :get %> 
-<%= button_to 'Destroy', @movie, method: :delete, data: { confirm: 'Are you sure?' } %>
-</p>
+</div>
+<div class="button">
+<%= button_to 'Delete', @movie, method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
 <% end %>

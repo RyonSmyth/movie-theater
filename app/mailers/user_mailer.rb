@@ -1,5 +1,9 @@
 class UserMailer < ApplicationMailer
-
+	
+	def welcome_email(user)
+   	  @user = user
+   	  mail(:to => user.email, :subject => "Welcome to SoCal Theater!")
+ 	end
 	def contact_form(email, name, message)
 	  @message = message
 	  mail(:from => email,
