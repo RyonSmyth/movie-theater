@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-.button {
+.account-button {
   float: left;
   padding-right: 10px;
 }

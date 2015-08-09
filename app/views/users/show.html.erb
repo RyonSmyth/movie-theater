@@ -15,10 +15,10 @@
   <h3>Email:</h3>
   <font size="4"><%= @user.email %></font>
 </p>
-<div class="button">
+<div class="account-button">
 <%= button_to 'Edit', edit_user_path(@user), :method => :get %>
 </div>
-<div class="button">
+<div class="account-button">
 <%= button_to 'Delete Account', @user, method: :delete, data: { confirm: 'Are you sure?' } %>
 </div>
 
