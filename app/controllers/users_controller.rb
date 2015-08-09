@@ -1,11 +1,16 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+
   load_and_authorize_resource
 
   # GET /users
   # GET /users.json
   def index
+  if user_signed_in? && current_user.admin
     @users = User.all
+  else
+    redirect_to root_path, notice: 'You do not have permission to view that page.'
+  end
   end
 
   # GET /users/1

@@ -4,19 +4,17 @@
 
 
 /* Movies Index Page CSS */
+
 #movie-header {
-	margin-left: 1em;
+	margin-left: 20px;
 }
 #header-border {
-	padding-bottom: 4em;
+	padding-bottom: 3em;
 }
 .movie-index {
 	display: inline-block;
 }
 
-.index-container {
-	margin-left: 1.8em;
-}
 .movie-index img {
 	max-height: 250px;
 	max-width: 200px;
@@ -31,10 +29,12 @@
 	width: auto;
 	text-align: center;
 }
+.index-button {
+	margin-left: 20px;
+}
 
 /* Movies Show Page CSS */
 .movie-show {
-	margin-left: 3em;
 	margin-top: 6em;
 }
 .movie-show img {
@@ -43,16 +43,6 @@
 	max-width: 400px;
 
 }
-#show-info {
-	display: inline-block;
-	max-width: 540px;
-	min-width: 250px;
-	width: auto;
-	vertical-align: top;
-	margin-left: 4em;
-	position: absolute;
-	margin-right: 4em;
-}
 
 #show-description {
 	font-size: 1.3em;
@@ -60,18 +50,9 @@
 	min-width: 250px;
 	width: auto;
 }
-.movie-show table {
-	min-width: 250px;
-	max-width: 450px;
-	width: auto;
-	border: 2px solid gray;
-}
 .movie-show td {
 	padding: .4em;
 	font-size: 1.3em;
-}
-#show-info h2 {
-	font-size: 2em;
 }
 
 button a:hover {
@@ -87,10 +68,62 @@ hr {
 #posted-comments {
 	padding-top: 1.5em;
 }
-#comment_body {
-	width: 24em;
-	height: 8em;
-}
+
 #show-comments {
 	margin-top: 5em;
+}
+
+.show-button {
+	display: inline-block;
+}
+
+
+
+@media (min-width: 1px) {
+  .movie-show h2 {
+    font-size: 1.5em;
+  }
+  #show-img {
+    display: none;
+  }
+  .movie-show table {
+	display: none;
+  }
+  #comment_body {
+	width: 19em;
+	height: 8em;
+  }
+}
+
+@media (min-width: 540px) {
+  select {
+    display: none;
+  }
+  .movie-show table {
+  	display: inline-block;
+	border: 2px solid gray;
+	font-size: 12px;
+  }
+  #comment_body {
+	width: 24em;
+	height: 8em;
+  }
+}
+
+
+@media (min-width: 992px) {
+  #show-img {
+    display: inline-block;
+
+  }
+  #show-info {
+	display: inline-block;
+	max-width: 540px;
+	min-width: 250px;
+	width: auto;
+	vertical-align: top;
+	margin-left: 4em;
+	position: absolute;
+	margin-right: 4em;
+  }
 }

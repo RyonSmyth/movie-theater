@@ -1,8 +1,7 @@
-<p id="notice"><%= notice %></p>
 
 
 <div class="movie-show">
-  <img src="/images/<%= @movie.image_url %>" class="img-responsive">
+  <img src="/images/<%= @movie.image_url %>" class="img-responsive" id="show-img">
   <div id="show-info">
     <h1><%= @movie.name %></h1><br>
     <p id="show-description"><strong>Synopsis: </strong><%= @movie.description %></p>
@@ -16,6 +15,16 @@
         <td><%= @movie.sixth_showing %></td>
         <td><%= @movie.seventh_showing %></td>
       </table>
+
+      <select> 
+        <option><%= @movie.first_showing %></option>
+        <option><%= @movie.second_showing %></option>
+        <option><%= @movie.third_showing %></option>
+        <option><%= @movie.fourth_showing %></option>
+        <option><%= @movie.fifth_showing %></option>
+        <option><%= @movie.sixth_showing %></option>
+        <option><%= @movie.seventh_showing %></option>
+      </select>
     <h4 id="show-rating">Average Rating: <div class="rated" data-score"<%= @movie.average_rating %>"></div></h4><br>
   </div>
   <p id ="show-comments">
@@ -25,5 +34,9 @@
   <%= will_paginate @comments %>
 </div>
 
-<%= link_to 'Edit', edit_movie_path(@movie) %> |
-<%= link_to 'Back', movies_path %>
+<% if user_signed_in? && current_user.admin %>
+<p class="show-button">
+<%= button_to 'Edit', edit_movie_path(@movie), :method => :get %> 
+<%= button_to 'Destroy', @movie, method: :delete, data: { confirm: 'Are you sure?' } %>
+</p>
+<% end %>

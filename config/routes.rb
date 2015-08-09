@@ -12,6 +12,9 @@ Rails.application.routes.draw do
 
   post 'static_pages/thank_you'
 
+  get 'static_pages/theater'
+
+  get 'static_pages/faq'
 
   root 'static_pages#index'
 

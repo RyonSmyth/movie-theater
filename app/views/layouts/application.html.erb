@@ -18,15 +18,16 @@
   .container {
   	background-color: #231f20;
   }
-  .container-fluid {
-    margin-bottom: 1em;
-  }
 
   .content {
+    min-height: 110%;
+    max-height: 2000%;
   	background-color: #FFFFFF;
-  	min-height: 110%;
-  	max-height: 2000%;
   	padding-bottom: 20px;
+    position: absolute;
+  }
+   .container-fluid {
+    margin-bottom: 1em;
   }
   .page-top {
     padding: 3em 2em 2em 0;
@@ -66,7 +67,9 @@
   font-family: Geneva;
   }
 
-
+  .padding {
+    margin-left: 25px;
+  }
 
   
   </style>
@@ -93,14 +96,14 @@
     <%= f.text_field :email, :placeholder => "Email"  %>
     <%= f.password_field :password, :placeholder => "Password" %>
     <%= f.submit 'Login' %>
-    <button><%= link_to "Register", new_user_registration_path, :method => :get, :style => "color:black"%></button>
+    <button><%= link_to "Sign up", new_user_registration_path, :method => :get, :style => "color:black"%></button>
     <% end %>
     </td>
     <td id="login-button">
     <%= button_to "Login", user_session_path, :method => :get%>
     </td>
     <td id="login-button">
-    <%= button_to "Register", new_user_registration_path, :method => :get%>
+    <%= button_to "Sign Up", new_user_registration_path, :method => :get%>
     </td>
     <% end %>
 
@@ -123,9 +126,9 @@
           	<ul class="nav navbar-nav">
             	<li><%= link_to "Home", root_path %></a>
             	<li><%= link_to "Movies", movies_path %></li>
-            	<li><%= link_to "Tickets",root_path %></li>
+            	<li><%= link_to "Theater",static_pages_theater_path %></li>
             	<li><%= link_to "Contact", static_pages_contact_path %></li>
-              <li><%= link_to "FAQ", root_path %></li>
+              <li><%= link_to "FAQ", static_pages_faq_path%></li>
               <% if user_signed_in? %>
                 <li id="account"><%= link_to "My Account", edit_user_registration_path%></li>
                 <li id="account"><%= link_to "Logout", destroy_user_session_path, :method => :delete %></li>
@@ -134,14 +137,17 @@
               <% end %>
             </ul>
         </div>
-    </div>
+      </div>
     </nav>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <div class="padding">
+
+    <%= notice %>
+    <%= alert %>
 
 
 
 <%= yield %>
+</div>
 </div>
 </body>
 </html>

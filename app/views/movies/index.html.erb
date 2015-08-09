@@ -1,16 +1,21 @@
-<p id="notice"><%= notice %></p>
 
 <h1 id="movie-header">Now Showing</h1>
+<% if user_signed_in? && current_user.admin %>
+<%= button_to 'New Movie', new_movie_path, :method => :get, :class => "index-button" %>
+<% end %>
+
 <p id="header-border"></p>
 
-  <div class="index-container">
+
     <% @movies.each do |movie| %>
       <div class="movie-index col-xs-6 col-sm-4 col-md-3"> 
         <%= link_to image_tag(movie.image_url), movie%>
         <p id="movie-name"><%= movie.name %></p>
       </div>
     <% end %>
-  </div>
 
-<br>
-<%= link_to 'New Movie', new_movie_path %>
+
+
+
+
+

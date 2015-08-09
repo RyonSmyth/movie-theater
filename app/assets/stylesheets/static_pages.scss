@@ -1,3 +1,31 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#jumbo {
+	padding-top: 5px;
+	padding-left: 0px;
+}
+
+#jumbo .container-fluid {
+	padding: 0;
+}
+
+#collapseOne, #collapseTwo, #collapseThree, #collapseFour {
+	background-color: lightgray;
+
+}
+
+.faq p {
+	float: left;
+	font-size: 1.2em;
+}
+
+/* CSS for larger devices */
+@media (min-width: 1200px) {
+  #jumbo {
+	padding-right: 100px;
+}
+
+}
