@@ -50,6 +50,9 @@
   .navbar-inverse .navbar-nav li a:hover {
     color: gray;   
   }
+  #divider {
+    display: none;
+  }
 }
 
 @media (min-width: 456px) {
@@ -123,6 +126,9 @@
   }
     #login-area {
     display: inline-block;
+  }
+  #divider {
+    display: block;
   }
 
 }
