@@ -13,13 +13,43 @@
  *= require_tree .
  *= require_self
  */
+
+/* Application-wide CSS */
+.page-top {
+  padding: 3em 2em 2em 0;
+  width: 100%;
+  float: right;
+}
+.page-top ul {
+  width: 100%;
+  float:right;
+}
+.page-top li {
+  border: none;
+  display: inline-block;
+  float: right;
+  padding: .2em;
+  font-size: 1.2em;
+}
+
+#label {
+  display: block;
+}
+.page-top table {
+  float: right;
+}
+.page-top button a:hover {
+  text-decoration: none;
+  background-color: white;
+}
+
 .account-button {
   float: left;
   padding-right: 10px;
 }
 
 
-
+/* Application-wide CSS for small devices */
 @media (min-width: 1px) {
   .content {
     margin-right: 1em;
@@ -59,6 +89,7 @@
   }
 }
 
+/* Application-wide CSS for medium devices */
 @media (min-width: 456px) {
     #login-small {
     display: none;
@@ -123,7 +154,7 @@
   }
 }
 
-/* CSS search/login bar for small devices */
+/* CSS search/login bar for large devices */
 @media (min-width: 992px) {
   #login-button {
     display: none;

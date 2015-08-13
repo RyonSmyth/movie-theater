@@ -4,10 +4,12 @@
 
 
 
-
+/* CSS for hompage */
 #movie-banner {
 	width: 100%;
+  height: 100%;
 }
+
 #jumbo {
 	padding-top: 5px;
 	padding-left: 0px;
@@ -17,36 +19,40 @@
 	padding: 0;
 }
 
+/* FAQ CSS */
 #collapseOne, #collapseTwo, #collapseThree, #collapseFour {
 	background-color: lightgray;
 
 }
-
 .faq p {
 	float: left;
 	font-size: 1.2em;
 }
 
-/* CSS for larger devices */
+/* CSS for smaller devices */
 @media (min-width: 1px) {
+
   #theater {
-	float:left;
-	display: inline-block;
+	  float:left;
+	  display: inline-block;
   }
   #theater-large {
-  	display: none;
+    display: none;
   }
-   .theater-info {
-  	display: inline-block;
+  .theater-info {
+    display: inline-block;
 
   }  
+  #theater-img{
+  margin-right: 10px;
+  }
 }
 
 /* CSS for larger devices */
 @media (min-width: 992px) {
   #theater {
-	float:right;
-	padding-right: 20px;
+	  float:right;
+	  padding-right: 20px;
 
   }
   .theater-info{
@@ -69,7 +75,7 @@
 /* CSS for larger devices */
 @media (min-width: 1200px) {
   #jumbo {
-	padding-right: 100px;
+	  padding-right: 100px;
   }
 
 }
