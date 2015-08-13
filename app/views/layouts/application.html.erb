@@ -11,7 +11,6 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-
   html, body {
   	height: 100%;
   }
@@ -32,8 +31,41 @@
    .container-fluid {
     margin-bottom: 1em;
   }
+  .page-top {
+    padding: 3em 2em 2em 0;
+    width: 100%;
+    float: right;
 
-  body {
+  }
+  .page-top ul {
+    width: 100%;
+    float:right;
+
+  }
+  .page-top li {
+    border: none;
+    display: inline-block;
+    float: right;
+    padding: .2em;
+    font-size: 1.2em;
+
+  }
+
+  #label {
+    display: block;
+  }
+  .page-top table {
+    float: right;
+  }
+  .page-top button a:hover {
+    text-decoration: none;
+    background-color: white;
+  }
+  .content, p {
+  font-family: Geneva;
+  }
+
+  .content, h1, h2, h3, h4, h5 {
   font-family: Geneva;
   }
 
@@ -114,9 +146,9 @@
     <%= notice %>
     <%= alert %>
 
+
+
 <%= yield %>
-
-
 </div>
 </div>
 </body>
