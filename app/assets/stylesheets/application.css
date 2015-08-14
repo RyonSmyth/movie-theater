@@ -13,13 +13,28 @@
  *= require_tree .
  *= require_self
  */
+
+ /* CSS for entire app */
+
 .account-button {
   float: left;
   padding-right: 10px;
 }
+.container {
+  background-color: #231f20;
+  position: relative;
+}
+
+.content {
+  min-height: 110%;
+  max-height: 2000%;
+  background-color: #FFFFFF;
+  padding-bottom: 20px;
+  position: relative;
+}
 
 
-
+/* CSS Navagation Bar for Small Devices */
 @media (min-width: 1px) {
   .content {
     margin-right: 1em;
@@ -59,6 +74,7 @@
   }
 }
 
+/* CSS for Small Devices */
 @media (min-width: 456px) {
     #login-small {
     display: none;
@@ -73,7 +89,7 @@
 
 }
 
-/* CSS Navagation Bar for Medium/Large Devices */
+/* CSS for Medium/Large Devices */
 @media (min-width: 768px) {
   .content {
     margin-right: 0;
@@ -87,7 +103,6 @@
   #login-button {
     display: inline-block;
     margin-top: 1.8em;
-    margin-right: .5em;
   }
   .register-button {
     margin-top: 1.85em;
@@ -127,7 +142,7 @@
   }
 }
 
-/* CSS search/login bar for small devices */
+/* CSS for Large Devices */
 @media (min-width: 992px) {
   #login-button {
     display: none;
