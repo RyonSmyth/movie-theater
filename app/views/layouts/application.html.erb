@@ -98,8 +98,9 @@
     <%= f.text_field :email, :placeholder => "Email"  %>
     <%= f.password_field :password, :placeholder => "Password" %>
     <%= f.submit 'Login' %>
-    <button><%= link_to "Sign up", new_user_registration_path, :method => :get, :style => "color:black"%></button>
     <% end %>
+    </td>
+    <td class="register-button" id="login-area"><%= button_to "Sign up", new_user_registration_path, :method => :get, :style => "color:black"%>
     </td>
     <td id="login-button">
     <%= button_to "Login", user_session_path, :method => :get%>

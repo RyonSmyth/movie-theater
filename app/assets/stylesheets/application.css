@@ -87,7 +87,11 @@
   #login-button {
     display: inline-block;
     margin-top: 1.8em;
-
+    margin-right: .5em;
+  }
+  .register-button {
+    margin-top: 1.85em;
+    margin-left: .5em;
   }
   #account {
     display: none;
