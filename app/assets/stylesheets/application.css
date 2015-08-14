@@ -36,9 +36,12 @@
 
 /* CSS Navagation Bar for Small Devices */
 @media (min-width: 1px) {
+  .padding {
+    margin-left: 10px;
+  }
   .content {
     margin-right: 1em;
-    min-width: 93%;
+    min-width: 91%;
   }
   #logged-in {
     display: none;
@@ -76,6 +79,9 @@
 
 /* CSS for Small Devices */
 @media (min-width: 456px) {
+  .padding {
+    margin-left: 10px;
+  }
     #login-small {
     display: none;
   }
@@ -86,11 +92,17 @@
   .page-top #search {
     padding-right: 3em;
   }
+  .content {
+    min-width: 93%;
+  }
 
 }
 
 /* CSS for Medium/Large Devices */
 @media (min-width: 768px) {
+  .padding {
+    margin-left: 25px;
+  }
   .content {
     margin-right: 1em;
   }
