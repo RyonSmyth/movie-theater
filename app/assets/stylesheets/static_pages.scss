@@ -20,7 +20,7 @@
 }
 
 /* FAQ CSS */
-#collapseOne, #collapseTwo, #collapseThree, #collapseFour {
+.panel-collapse {
 	background-color: lightgray;
 
 }
@@ -28,6 +28,22 @@
 	float: left;
 	font-size: 1.2em;
 }
+.panel-heading a:hover {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+
+.panel-body a:hover {
+  color: black;
+  background-color: lightgray;
+  text-decoration: none;
+}
+.panel-body a {
+  color: black;
+  text-decoration: underline;
+}
+
 
 /* CSS for smaller devices */
 @media (min-width: 1px) {

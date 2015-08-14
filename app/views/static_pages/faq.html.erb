@@ -1,4 +1,4 @@
-<h1>FAQ</h1>
+<h1>FAQ</h1><br>
 <div class="faq">
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
   <div class="panel panel-default">
@@ -11,7 +11,7 @@
     </div>
     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
       <div class="panel-body">
-        <p>SoCal Theater is a website meant to demonstrate programming abilities in responsive full-stack development.</p> 
+        <p>SoCal Theater is a website meant to demonstrate <%= link_to "Ryan Smith's", "http://www.ryonsmyth.com", style: "none" %> programming abilities in responsive full-stack development.</p> 
       </div>
     </div>
   </div>
@@ -54,6 +54,20 @@
     <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
       <div class="panel-body">
         <p>Admin accounts can add, edit, and delete movies. Admin accounts also have the ability to delete comments.</p>
+      </div>
+    </div>
+  </div>
+     <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFive">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          <span class="glyphicon glyphicon-plus"></span> As an Admin creating a new movie, what goes in the "Image url" text field?
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+      <div class="panel-body">
+        <p>Some examples you can use are: pixels.jpg, antman.jpg, ted2.jpg, and papertowns.jpg</p>
       </div>
     </div>
   </div>
