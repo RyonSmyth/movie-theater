@@ -16,6 +16,7 @@ class MoviesController < ApplicationController
   # GET /movies/1.jsonundefined method `paginate'
   def show
     @comments = @movie.comments.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 5)
+    @movie = Movie.find(params[:id])
   end
 
   # GET /movies/new

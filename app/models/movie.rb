@@ -1,8 +1,9 @@
 class Movie < ActiveRecord::Base
-  validates :name, presence: true
   has_many :comments
+  validates :name, presence: true
 
   def average_rating
   	comments.average(:rating).to_f
   end
+
 end

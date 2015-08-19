@@ -7,6 +7,7 @@
 					<%= link_to ('<span class="glyphicon glyphicon-remove"></span>').html_safe, movie_comment_path(@movie, comment), method: :delete, data: { confirm: 'Are you sure?'} %>
 				<% end %></p>
 				<div class="rated" data-score="<%= comment.rating %>"></div>
+				
 				<p><%= comment.body %></p>
 		</div>
 	<% end %>
